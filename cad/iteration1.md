@@ -16,7 +16,7 @@
 
 ## Structural Issue Encountered
 
-<img src="pictures/WD_problem_irl.png" alt="PLA Chassis Bending" width="450"/>
+<img src="pictures/WD_problem_irl.jpeg" alt="PLA Chassis Bending" width="450"/>
 
 </div>
 
