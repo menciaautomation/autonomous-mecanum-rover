@@ -4,19 +4,19 @@
 
 ## Overall CAD Design
 
-<img src="iteration1_autodesk.png" alt="Iteration 1 CAD" width="850"/>
+<img src="pictures/iteration1_autodesk.png" alt="Iteration 1 CAD" width="850"/>
 
 <br><br>
 
 ## Drivetrain Layout
 
-<img src="iteration1_drivetrain_autodesk.png" alt="Drivetrain Layout" width="850"/>
+<img src="pictures/iteration1_drivetrain_autodesk.png" alt="Drivetrain Layout" width="850"/>
 
 <br><br>
 
 ## Structural Issue Encountered
 
-<img src="WD_problem_irl.png" alt="PLA Chassis Bending" width="450"/>
+<img src="pictures/WD_problem_irl.png" alt="PLA Chassis Bending" width="450"/>
 
 </div>
 
@@ -39,70 +39,23 @@ Since I did not have access to a CNC machine, the chassis had to be redesigned a
 
 ---
 
-## Design Decisions
-
-- Increased the chassis footprint to accommodate larger motors.
-- Added multiple levels for electronics and sensors.
-- Created dedicated mounting locations for:
-  - Raspberry Pi
-  - Motor drivers
-  - LiDAR
-  - Ultrasonic sensors
-  - Camera
-- Used aluminum standoffs to separate the electronics layers.
-- Designed the base plate to fit within the maximum printable area of the printer.
-
----
-
-## What Worked
-
-- Successfully packaged every component onto the rover.
-- Created dedicated mounting positions for sensors and electronics.
-- The stacked architecture simplified wiring and future modifications.
-- Sensor placement provided good fields of view for future perception algorithms.
-- Demonstrated that the larger chassis could support the intended hardware layout.
-
----
-
-## Problems Discovered
-
-Although the packaging was successful, this design revealed an important mechanical issue.
+## Engineering Challenges
 
 ### Weight Distribution
 
-The four DC gear motors were the heaviest components on the rover and were mounted near the outer edges of the chassis.
-
-Because the chassis was significantly larger than the original kit design, the center of the base plate had a long unsupported span. As more components were installed, the PLA chassis began to flex noticeably.
+The four DC gear motors were the heaviest components on the rover and were mounted near the outer edges of the chassis. While the design successfully packaged all components, the weight distribution introduced an unexpected structural issue.
 
 ### Structural Rigidity
 
-The base plate was printed entirely from PLA and lacked reinforcing ribs or structural supports underneath the center section.
+The large PLA base plate lacked sufficient reinforcement beneath its center span. As the drivetrain, batteries, and electronics were installed, the chassis began to flex noticeably.
 
-While the design met the packaging requirements, it did not provide sufficient stiffness for the combined weight of the drivetrain, electronics, batteries, and sensor stack.
-
-Rather than risking permanent deformation or cracking during testing, I decided to stop development on this version and redesign the mechanical structure before continuing the build.
+Rather than risking damage to the rover or continuing development on a weak mechanical foundation, I chose to redesign the chassis before moving forward.
 
 ---
 
 ## Lessons Learned
 
-This iteration highlighted that fitting every component onto a robot is only one aspect of mechanical design.
-
-Future iterations would focus on:
-
-- Improving structural rigidity.
-- Reducing chassis flex.
-- Creating better load paths between the motors.
-- Providing additional reinforcement beneath the center of the chassis.
-- Designing for both manufacturability and long-term durability.
-
----
-
-## Key Takeaways
-
-- ✅ Successfully expanded beyond the original kit chassis.
-- ✅ Verified the packaging of all major components.
-- ✅ Developed a modular multi-level electronics layout.
-- ❌ Underestimated the effect of weight distribution.
-- ❌ Insufficient structural support resulted in significant PLA bending.
-- ➜ The next iteration would prioritize chassis strength before additional integration.
+- Packaging all components is only one aspect of robot design.
+- Structural rigidity is equally important as available space.
+- Designing around manufacturing constraints (3D printer dimensions) can introduce new engineering tradeoffs.
+- Future iterations would prioritize stiffness, reinforcement, and improved load paths before adding additional features.
