@@ -2,13 +2,21 @@
 
 <div align="center">
 
-**Front Isometric View**
+## Overall CAD Design
 
-![Front Isometric](pictures/iteration1_iso.png)
+<img src="pictures/iteration1_autodesk.png" alt="Iteration 1 CAD" width="800"/>
 
-**Top View**
+<br><br>
 
-![Top View](pictures/iteration1_top.png)
+## Drivetrain Layout
+
+<img src="pictures/iteration1_drivetrain_autodesk.png" alt="Drivetrain Layout" width="800"/>
+
+<br><br>
+
+## Structural Issue Encountered
+
+<img src="pictures/WD_problem_irl.png" alt="PLA Chassis Bending" width="500"/>
 
 </div>
 
@@ -68,4 +76,4 @@ Rather than risking damage to the printed chassis, I decided to redesign the mec
 
 - Designing for available space is only part of the engineering process.
 - Structural stiffness is just as important as packaging.
-- Future iterations would prioritize improved weight distribution, increased rigidity, and better support for the drivetrain.
+- Future iterations will prioritize improved weight distribution, increased rigidity, and better support for the drivetrain.
